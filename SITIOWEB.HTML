@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDIE GENIUS</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Comfortaa', cursive;
+      background-color: #fdf6f0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #fb6c1, #ffe4b5);
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0px 4px 10px rgba(00,0,0.1);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #444;
+    }
+
+    header h2 {
+      font-size: 1.4em;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff4f2;
+      padding: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff7f50;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* ---- Sección Inicio ---- */
+    #inicio h3 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #ff7f50;
+    }
+
+    .tools-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tool-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .tool-card h4 {
+      margin: 10px 0;
+      color: #444;
+    }
+
+    .tool-card a {
+      text-decoration: none;
+      color: #ff7f50;
+      font-weight: bold;
+    }
+
+    /* ---- Sección Empecemos ---- */
+    #empecemos {
+      background-color: #fff9f7;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="email"], input[type="password"] {
+      padding: 10px;
+      margin: 10px;
+      width: 60%;
+      border: 2px solid #ffd1ba;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #ff7f50;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff9966;
+    }
+
+    #zona-trabajo {
+      display: none;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    #zona-trabajo h3 {
+      color: #ff7f50;
+      margin-bottom: 15px;
+    }
+
+    .work-areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .work-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    /* ---- Sección Donde encontrarnos ---- */
+    #contacto {
+      text-align: center;
+    }
+
+    .redes a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #ff7f50;
+      font-weight: bold;
+    }
+
+    iframe {
+      border: none;
+      width: 80%;
+      height: 300px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ffe4b5;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>INDIE GENIUS</h1>
+    <h2>Dibujos, Arte y más !!</h2>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#empecemos">Empecemos</a>
+    <a href="#contacto">Dónde encontrarnos</a>
+  </nav>
+
+  <section id="inicio">
+    <h3>Bienvenido a la comunidad de arte independiente ✨</h3>
+    <p>¡Aquí podrás conectar con otros artistas, explorar herramientas creativas online y desarrollar tus propios proyectos indie!  
+    Únete a nuestros talleres virtuales, sesiones colaborativas y explora una nueva forma de arte digital.</p>
+
+    <div class="tools-list">
+      <div class="tool-card">
+        <h4>🎨 Herramientas para dibujar</h4>
+        <a href="https://sketch.io/sketchpad/" target="_blank">Sketchpad</a><br>
+        <a href="https://kleki.com/" target="_blank">Kleki</a>
+      </div>
+      <div class="tool-card">
+        <h4>💫 Colabora con otros artistas</h4>
+        <a href="https://aggie.io/" target="_blank">Aggie.io</a>
+      </div>
+      <div class="tool-card">
+        <h4>🧠 Crea tu proyecto indie</h4>
+        <a href="#">Talleres personalizados</a>
+      </div>
+      <div class="tool-card">
+        <h4>🖌️ Aprende animación y diseño</h4>
+        <a href="https://pixilart.com/draw" target="_blank">Pixilart</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="empecemos">
+    <h3>¡Empecemos tu viaje creativo! 🌈</h3>
+    <form id="loginForm">
+      <input type="email" placeholder="Tu correo electrónico" required><br>
+      <input type="password" placeholder="Contraseña" required><br>
+      <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <div id="zona-trabajo">
+      <h3>Zona de trabajo creativa</h3>
+      <div class="work-areas">
+        <div class="work-card">🎨 Espacio para dibujar</div>
+        <div class="work-card">🎬 Área de animación</div>
+        <div class="work-card">🏞️ Diseño de fondos 2D y 3D</div>
+        <div class="work-card">🧩 Edición y composición</div>
+        <div class="work-card">📦 Galería de proyectos</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h3>¿Dónde encontrarnos? 📍</h3>
+    <div class="redes">
+      <a href="https://www.tiktok.com/@indie_genius" target="_blank">TikTok: @indie_genius</a><br>
+      <a href="https://www.youtube.com/@indiegeniusart" target="_blank">YouTube: Indie Genius Art</a><br>
+      <a href="https://www.instagram.com/indie_genius.art" target="_blank">Instagram: @indie_genius.art</a><br>
+      <a href="https://x.com/indie_genius" target="_blank">X (Twitter): @indie_genius</a>
+    </div>
+
+    <iframe src="https://www.google.com/maps?q=Buenos%20Aires%20Capital%20Federal&output=embed"></iframe>
+  </section>
+
+  <footer>
+    © 2025 Indie Genius - Creando arte sin límites 🎨
+  </footer>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const zonaTrabajo = document.getElementById('zona-trabajo');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert("¡Bienvenido a Indie Genius! Te mantendremos informado sobre nuevos eventos, herramientas y más.");
+      zonaTrabajo.style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
+ <!-- Vincular hoja de estilos -->
+ 
